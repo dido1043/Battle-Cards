@@ -16,3 +16,6 @@ D:\softuni\Battle-Cards\BattleCards\BattleCards\obj\Debug\net6.0\refint\Program.
 D:\softuni\Battle-Cards\BattleCards\BattleCards\obj\Debug\net6.0\Program.pdb
 D:\softuni\Battle-Cards\BattleCards\BattleCards\obj\Debug\net6.0\Program.genruntimeconfig.cache
 D:\softuni\Battle-Cards\BattleCards\BattleCards\obj\Debug\net6.0\ref\Program.dll
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Register.html
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\SIS.MvcFramework.dll
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\SIS.MvcFramework.pdb

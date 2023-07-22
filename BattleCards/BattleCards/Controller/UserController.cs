@@ -25,7 +25,7 @@ namespace Program.Controller
 
         public HttpResponse Register(HttpRequest request)
         {
-            var responseHtml = "<h1>Register...</h1>";
+            var responseHtml = File.ReadAllText("View/Users/Register.html");
 
             var responseBodyBytes = Encoding.UTF8.GetBytes(responseHtml);
 

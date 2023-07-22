@@ -1,0 +1,12 @@
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\bin\Debug\net6.0\SIS.MvcFramework.deps.json
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\bin\Debug\net6.0\SIS.MvcFramework.dll
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\bin\Debug\net6.0\SIS.MvcFramework.pdb
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFramework.csproj.AssemblyReference.cache
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFramework.GeneratedMSBuildEditorConfig.editorconfig
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFramework.AssemblyInfoInputs.cache
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFramework.AssemblyInfo.cs
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFramework.csproj.CoreCompileInputs.cache
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFramework.dll
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\refint\SIS.MvcFramework.dll
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFramework.pdb
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\ref\SIS.MvcFramework.dll

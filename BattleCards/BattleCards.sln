@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "BattleCards\Prog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.HTTP", "SIS.HTTP\SIS.HTTP.csproj", "{34C94994-24E3-4D1E-99CA-F093913BBB02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.MvcFramework", "SIS.MvcFramework\SIS.MvcFramework.csproj", "{B4450BFC-772C-47E9-AFA9-8DA65000E460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{34C94994-24E3-4D1E-99CA-F093913BBB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34C94994-24E3-4D1E-99CA-F093913BBB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34C94994-24E3-4D1E-99CA-F093913BBB02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4450BFC-772C-47E9-AFA9-8DA65000E460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4450BFC-772C-47E9-AFA9-8DA65000E460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4450BFC-772C-47E9-AFA9-8DA65000E460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4450BFC-772C-47E9-AFA9-8DA65000E460}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

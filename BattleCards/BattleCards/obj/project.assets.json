@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/SIS.HTTP.dll": {}
         }
+      },
+      "SIS.MvcFramework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SIS.MvcFramework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SIS.MvcFramework.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../SIS.HTTP/SIS.HTTP.csproj",
       "msbuildProject": "../SIS.HTTP/SIS.HTTP.csproj"
+    },
+    "SIS.MvcFramework/1.0.0": {
+      "type": "project",
+      "path": "../SIS.MvcFramework/SIS.MvcFramework.csproj",
+      "msbuildProject": "../SIS.MvcFramework/SIS.MvcFramework.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "SIS.HTTP >= 1.0.0"
+      "SIS.HTTP >= 1.0.0",
+      "SIS.MvcFramework >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -55,6 +71,9 @@
           "projectReferences": {
             "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj": {
               "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj"
+            },
+            "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.MvcFramework\\SIS.MvcFramework.csproj": {
+              "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.MvcFramework\\SIS.MvcFramework.csproj"
             }
           }
         }
