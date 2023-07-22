@@ -1,0 +1,12 @@
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\bin\Debug\net6.0\SIS.HTTP.deps.json
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\bin\Debug\net6.0\SIS.HTTP.dll
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\bin\Debug\net6.0\SIS.HTTP.pdb
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\obj\Debug\net6.0\SIS.HTTP.csproj.AssemblyReference.cache
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\obj\Debug\net6.0\SIS.HTTP.GeneratedMSBuildEditorConfig.editorconfig
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\obj\Debug\net6.0\SIS.HTTP.AssemblyInfoInputs.cache
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\obj\Debug\net6.0\SIS.HTTP.AssemblyInfo.cs
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\obj\Debug\net6.0\SIS.HTTP.csproj.CoreCompileInputs.cache
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\obj\Debug\net6.0\SIS.HTTP.dll
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\obj\Debug\net6.0\refint\SIS.HTTP.dll
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\obj\Debug\net6.0\SIS.HTTP.pdb
+D:\softuni\Battle-Cards\BattleCards\SIS.HTTP\obj\Debug\net6.0\ref\SIS.HTTP.dll

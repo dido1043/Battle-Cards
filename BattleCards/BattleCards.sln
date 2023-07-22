@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BattleCards", "BattleCards", "{E66E7361-A87E-40BC-B533-8DBBEE631695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "BattleCards\Program.csproj", "{62D8F3CD-3DE3-439C-9C55-6C1AB48C23BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.HTTP", "SIS.HTTP\SIS.HTTP.csproj", "{34C94994-24E3-4D1E-99CA-F093913BBB02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62D8F3CD-3DE3-439C-9C55-6C1AB48C23BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D8F3CD-3DE3-439C-9C55-6C1AB48C23BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D8F3CD-3DE3-439C-9C55-6C1AB48C23BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D8F3CD-3DE3-439C-9C55-6C1AB48C23BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C94994-24E3-4D1E-99CA-F093913BBB02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C94994-24E3-4D1E-99CA-F093913BBB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C94994-24E3-4D1E-99CA-F093913BBB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C94994-24E3-4D1E-99CA-F093913BBB02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62D8F3CD-3DE3-439C-9C55-6C1AB48C23BF} = {E66E7361-A87E-40BC-B533-8DBBEE631695}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00C535CF-F86E-472B-AB9A-B52A81C679AE}
+	EndGlobalSection
+EndGlobal
