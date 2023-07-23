@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "SIS.MvcFramework/1.0.0": {
+        "dependencies": {
+          "SIS.HTTP": "1.0.0"
+        },
         "runtime": {
           "SIS.MvcFramework.dll": {}
+        }
+      },
+      "SIS.HTTP/1.0.0": {
+        "runtime": {
+          "SIS.HTTP.dll": {}
         }
       }
     }
   },
   "libraries": {
     "SIS.MvcFramework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SIS.HTTP/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

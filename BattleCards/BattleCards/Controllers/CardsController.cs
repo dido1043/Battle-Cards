@@ -1,12 +1,13 @@
-﻿using System;
+﻿using SIS.MvcFramework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program.Controller
+namespace Program.Controllers
 {
-    public class CardsController 
+    public class CardsController :Controller
     {
     }
 }

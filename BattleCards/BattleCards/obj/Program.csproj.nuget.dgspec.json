@@ -144,7 +144,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj": {
+                "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

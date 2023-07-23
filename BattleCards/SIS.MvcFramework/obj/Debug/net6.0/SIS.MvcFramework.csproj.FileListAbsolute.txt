@@ -10,3 +10,6 @@ D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFra
 D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\refint\SIS.MvcFramework.dll
 D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFramework.pdb
 D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\ref\SIS.MvcFramework.dll
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\bin\Debug\net6.0\SIS.HTTP.dll
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\bin\Debug\net6.0\SIS.HTTP.pdb
+D:\softuni\Battle-Cards\BattleCards\SIS.MvcFramework\obj\Debug\net6.0\SIS.MvcFramework.csproj.CopyComplete

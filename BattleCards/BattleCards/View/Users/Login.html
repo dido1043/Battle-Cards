@@ -1,15 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Register</title>
+    <title>Login Page</title>
     <style>
-        /* Reset some default styles to ensure consistency */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
@@ -20,7 +19,7 @@
             align-items: center;
             height: 100vh;
         }
-
+        
         .container {
             background-color: #fff;
             padding: 20px;
@@ -28,22 +27,22 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             width: 400px;
         }
-
+        
         h2 {
             margin-bottom: 20px;
             text-align: center;
         }
-
+        
         form {
             display: flex;
             flex-direction: column;
         }
-
+        
         label {
             font-weight: bold;
             margin-bottom: 5px;
         }
-
+        
         input {
             padding: 10px;
             border: 1px solid #ccc;
@@ -51,21 +50,30 @@
             margin-bottom: 10px;
             transition: border-color 0.3s ease;
         }
-
-       input:focus {
-           border-color: #4CAF50;
-       }
-
-       input[type="submit"] {
-           background-color: #4CAF50;
-           color: #fff;
-           cursor: pointer;
-       }
-
-       input[type="submit"]:hover {
-           background-color: #45a049;
-       }
-
+        
+        input:focus {
+            border-color: #4CAF50;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
         /* Optional: Add more styling for a cleaner look */
         /* Example styles for responsiveness */
         @media (max-width: 600px) {
@@ -74,7 +82,7 @@
                 max-width: 400px;
             }
         }
-
+        
         /* Example styles for larger screens */
         @media (min-width: 1200px) {
             .container {
@@ -86,33 +94,23 @@
 </head>
 <body>
     <div class="container">
-        <h2>Registration</h2>
-        </hr>
-        <form action="/register" method="post">
+        <h2>Login</h2>
+        <form action="/login" method="post">
             <div>
-                <label for="username">Username:</label></br>
+                <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
             </div>
 
             <div>
-                <label for="email">Email:</label> </br>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div>
-                <label for="password">Password:</label></br>
+                <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
 
             <div>
-                <label for="confirmPassword">Confirm Password:</label></br>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-            </div>
-            </br>
-            <div>
-                <input type="submit" value="Register">
+                <input type="submit" value="Login">
             </div>
         </form>
+        <p>Don't have an account? <a href="/Register.html">Register here</a></p>
     </div>
 </body>
 </html>

@@ -19,3 +19,5 @@ D:\softuni\Battle-Cards\BattleCards\BattleCards\obj\Debug\net6.0\ref\Program.dll
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Register.html
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\SIS.MvcFramework.dll
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\SIS.MvcFramework.pdb
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Login.html
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Home\home.html
