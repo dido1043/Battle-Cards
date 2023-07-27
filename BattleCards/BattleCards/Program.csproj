@@ -14,11 +14,17 @@
 
   <ItemGroup>
     <Folder Include="View\Home\" />
-    <Folder Include="View\Cards\" />
+    <Folder Include="View\Shared\" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="View\Cards\Add.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="View\Home\home.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="View\Shared\_Layout.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="View\Users\Login.html">

@@ -1,5 +1,7 @@
 ﻿using Program.Controllers;
 using SIS.HTTP;
+using SIS.MvcFramework;
+
 
 namespace BattleCards
 {
@@ -7,12 +9,15 @@ namespace BattleCards
     {
         static async Task Main(string[] args)
         {
-            IHttpServer server = new HttpServer();
-            server.AddRoute("/", new HomeController().HomePage);
-            server.AddRoute("/about", new HomeController().About);
-            server.AddRoute("/users/login", new UserController().Login);
-            server.AddRoute("/users/register", new UserController().Register);
-            server.StartAsync(8080);
+            List<Route> routeTable= new List<Route>();
+
+           
+            routeTable.Add(new Route("/", SIS.HTTP.HttpMethod.Get, new HomeController().HomePage));
+            routeTable.Add(new Route("/about", SIS.HTTP.HttpMethod.Get, new HomeController().About));
+            routeTable.Add(new Route("/users/login", SIS.HTTP.HttpMethod.Get, new UserController().Login));
+            routeTable.Add(new Route("/users/register", SIS.HTTP.HttpMethod.Get, new UserController().Register));
+            routeTable.Add(new Route("/cards/add", SIS.HTTP.HttpMethod.Get, new CardsController().Add));
+            Host.CreateHostAsync(routeTable, 8080);
         }
     }
 }

@@ -7,7 +7,12 @@ namespace SIS.MvcFramework
     {
         public HttpResponse View(string path)
         {
-            var responseHtml = File.ReadAllText(path);
+           var layout = System.IO.File.ReadAllText("View/Shared/_Layout.html");
+            
+            
+            var viewContent = File.ReadAllText(path);
+
+            var responseHtml = layout.Replace("@RenderBody()", viewContent) ;
 
             var responseBodyBytes = Encoding.UTF8.GetBytes(responseHtml);
 
