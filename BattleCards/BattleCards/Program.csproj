@@ -21,6 +21,9 @@
     <None Update="View\Cards\Add.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="View\Cards\All.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="View\Home\home.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

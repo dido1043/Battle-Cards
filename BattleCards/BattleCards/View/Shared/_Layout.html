@@ -37,8 +37,9 @@ nav a {
       margin-right: 5px;
  }
 nav a:hover {
-    background-color: #0056b3;
-    text-decoration: none;
+    
+    text-decoration: line-through;
+    transform: scaleX(36px);
 }
 
 main {
@@ -73,28 +74,25 @@ footer {
 <body class="container">
     <header>
         <nav>
-            <a >Battle Cards</a>
-            <button class="navbar-toggler" type="button" data-target="#navbarNav">
-                <span class="text-white">
-                    Menu
-                </span>
-            </button>
-
+            <h1 >Battle Cards</h1>
             <div  id="navbarNav">
-            <ul>
-                <li class="nav-item">
-                    <a  href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/users/login">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a  href="/users/register">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/cards/add">Add</a>
-                </li>
-            </ul>
+                <ul>
+                    <li class="nav-item">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/users/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/users/register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/cards/add">Add</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/cards/all">All</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -102,7 +100,7 @@ footer {
         @RenderBody()
     </main>
 
-    <footer>
+    <footer class="bg-blue text-center text-lg-start">
         <h5>    Created by Deyan</h5>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

@@ -23,3 +23,4 @@ D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Logi
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Home\home.html
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Shared\_Layout.html
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Cards\Add.html
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Cards\All.html
