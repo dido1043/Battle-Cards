@@ -24,3 +24,5 @@ D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Home\home.
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Shared\_Layout.html
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Cards\Add.html
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Cards\All.html
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\wwwroot\css\main.css
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\wwwroot\favicon.ico

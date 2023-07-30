@@ -10,7 +10,7 @@ namespace SIS.MvcFramework
            var layout = System.IO.File.ReadAllText("View/Shared/_Layout.html");
             
             
-            var viewContent = File.ReadAllText(path);
+            var viewContent = System.IO.File.ReadAllText(path);
 
             var responseHtml = layout.Replace("@RenderBody()", viewContent) ;
 
@@ -26,5 +26,20 @@ namespace SIS.MvcFramework
 
             return response;
         }
+
+        public HttpResponse File(string filePath, string type)
+        {
+            var fileBytes = System.IO.File.ReadAllBytes(filePath);
+            var response = new HttpResponse(type, fileBytes);
+            return response;
+        }
+
+        public HttpResponse Redirect(string url)
+        {
+            var response = new HttpResponse(HttpStatus.Found);
+            response.Headers.Add(new Header("Location", url));
+            return response;
+        }
+
     }
 }

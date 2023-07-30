@@ -10,6 +10,7 @@ namespace Program.Controllers
         {
             return this.View("View/Home/home.html");
         }
+        
         public HttpResponse About(HttpRequest request)
         {
             var responseHtml = "<h1>About...</h1>";

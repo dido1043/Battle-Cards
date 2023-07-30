@@ -9,8 +9,13 @@ namespace SIS.HTTP
 {
     public class HttpResponse
     {
-        
-        
+
+        public HttpResponse(HttpStatus statusCode)
+        {
+            this.StatusCode = statusCode;
+            this.Headers = new List<Header>();
+            this.Cookies = new List<Cookie>();
+        }
         public HttpResponse(string contentType, byte[] body, HttpStatus statusCode = HttpStatus.OK)
         {
             if (body == null)

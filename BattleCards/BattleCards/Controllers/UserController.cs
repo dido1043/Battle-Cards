@@ -17,5 +17,12 @@ namespace Program.Controllers
         {
             return this.View("View/Users/Register.html");
         }
+        public HttpResponse DoLogin(HttpRequest request)
+        {
+            //TODO:read data
+            //TODO:check user
+            //TODO:log user
+            return this.Redirect("/");
+        }
     }
 }
