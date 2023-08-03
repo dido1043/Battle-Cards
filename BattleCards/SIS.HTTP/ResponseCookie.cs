@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SIS.HTTP
+﻿namespace SIS.HTTP
 {
+    using System.Text;
     public class ResponseCookie:Cookie
     {
         public ResponseCookie(string name, string value)

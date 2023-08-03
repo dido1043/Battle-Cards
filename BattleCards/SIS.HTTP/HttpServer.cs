@@ -1,10 +1,9 @@
-﻿using System.Net;
-using System.Net.Sockets;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-
-namespace SIS.HTTP
+﻿namespace SIS.HTTP
 {
+    using System.Net;
+    using System.Net.Sockets;
+    using System.Text;
+
     public class HttpServer : IHttpServer
     {
         List<Route> routeTable = new List<Route>();
@@ -66,7 +65,7 @@ namespace SIS.HTTP
                 HttpResponse response;
                 var route = this.routeTable.FirstOrDefault(x => x.Path == request.Path
                 && x.Method == request.Method);
-                Console.WriteLine(requestAsString);
+                //Console.WriteLine(requestAsString);
                 if(route != null)
                 {
                    

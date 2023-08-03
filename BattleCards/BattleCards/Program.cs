@@ -1,10 +1,9 @@
 ﻿using Program.Controllers;
-using SIS.HTTP;
-using SIS.MvcFramework;
-
 
 namespace BattleCards
 {
+    using SIS.HTTP;
+    using SIS.MvcFramework;
     public class Program
     {
         static async Task Main(string[] args)

@@ -1,13 +1,8 @@
-﻿using SIS.HTTP;
-using SIS.MvcFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Program.Controllers
+﻿namespace Program.Controllers
 {
+    using SIS.HTTP;
+    using SIS.MvcFramework;
+
     public class CardsController :Controller
     {
         public HttpResponse All(HttpRequest request)

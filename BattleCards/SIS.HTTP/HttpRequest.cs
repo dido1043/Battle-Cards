@@ -1,8 +1,6 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using System.Text;
-
-namespace SIS.HTTP
+﻿namespace SIS.HTTP
 {
+    using System.Text;
     public class HttpRequest
     {
         public HttpRequest(string requestString)

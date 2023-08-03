@@ -5,11 +5,13 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BattleCards", "BattleCards", "{E66E7361-A87E-40BC-B533-8DBBEE631695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "BattleCards\Program.csproj", "{62D8F3CD-3DE3-439C-9C55-6C1AB48C23BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program", "BattleCards\Program.csproj", "{62D8F3CD-3DE3-439C-9C55-6C1AB48C23BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.HTTP", "SIS.HTTP\SIS.HTTP.csproj", "{34C94994-24E3-4D1E-99CA-F093913BBB02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.HTTP", "SIS.HTTP\SIS.HTTP.csproj", "{34C94994-24E3-4D1E-99CA-F093913BBB02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.MvcFramework", "SIS.MvcFramework\SIS.MvcFramework.csproj", "{B4450BFC-772C-47E9-AFA9-8DA65000E460}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.MvcFramework", "SIS.MvcFramework\SIS.MvcFramework.csproj", "{B4450BFC-772C-47E9-AFA9-8DA65000E460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.Tests", "SIS.Tests\SIS.Tests.csproj", "{D6A4CDF0-3453-4EBC-8872-0E4A0F6981BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{B4450BFC-772C-47E9-AFA9-8DA65000E460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4450BFC-772C-47E9-AFA9-8DA65000E460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4450BFC-772C-47E9-AFA9-8DA65000E460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A4CDF0-3453-4EBC-8872-0E4A0F6981BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A4CDF0-3453-4EBC-8872-0E4A0F6981BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A4CDF0-3453-4EBC-8872-0E4A0F6981BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A4CDF0-3453-4EBC-8872-0E4A0F6981BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,9 @@
-﻿using SIS.HTTP;
-using SIS.MvcFramework;
-using System.Text;
-
-namespace Program.Controllers
+﻿namespace Program.Controllers
 {
+    using SIS.HTTP;
+    using SIS.MvcFramework;
+    using System.Text;
+
     public class HomeController : Controller
     {
         public HttpResponse HomePage(HttpRequest request)

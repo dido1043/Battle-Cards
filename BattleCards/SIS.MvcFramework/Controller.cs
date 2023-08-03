@@ -1,18 +1,18 @@
-﻿using SIS.HTTP;
-using System.Text;
-
-namespace SIS.MvcFramework
+﻿namespace SIS.MvcFramework
 {
+    using SIS.HTTP;
+    using System.Text;
+
     public abstract class Controller
     {
         public HttpResponse View(string path)
         {
-           var layout = System.IO.File.ReadAllText("View/Shared/_Layout.html");
-            
-            
+            var layout = System.IO.File.ReadAllText("View/Shared/_Layout.html");
+
+
             var viewContent = System.IO.File.ReadAllText(path);
 
-            var responseHtml = layout.Replace("@RenderBody()", viewContent) ;
+            var responseHtml = layout.Replace("@RenderBody()", viewContent);
 
             var responseBodyBytes = Encoding.UTF8.GetBytes(responseHtml);
 

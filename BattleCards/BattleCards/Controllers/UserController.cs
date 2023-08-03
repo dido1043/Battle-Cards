@@ -1,10 +1,7 @@
-﻿using SIS.HTTP;
-using SIS.MvcFramework;
-using System.Text;
-
-
-namespace Program.Controllers
+﻿namespace Program.Controllers
 {
+    using SIS.HTTP;
+    using SIS.MvcFramework;
     public class UserController: Controller
     {
         public HttpResponse Login(HttpRequest request)

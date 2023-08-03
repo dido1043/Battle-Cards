@@ -1,9 +1,9 @@
-﻿using SIS.HTTP;
-using SIS.MvcFramework;
-
-
-namespace Program.Controllers
+﻿namespace Program.Controllers
 {
+    using SIS.HTTP;
+    using SIS.MvcFramework;
+
+
     public class StaticFilesController : Controller
     {
         public HttpResponse Favicon(HttpRequest request)
