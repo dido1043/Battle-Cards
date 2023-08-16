@@ -4,6 +4,68 @@
     "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.Tests\\SIS.Tests.csproj": {}
   },
   "projects": {
+    "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj",
+        "projectName": "Program",
+        "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj",
+        "packagesPath": "C:\\Users\\Dido\\.nuget\\packages\\",
+        "outputPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dido\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj": {
+                "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj"
+              },
+              "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.MvcFramework\\SIS.MvcFramework.csproj": {
+                "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.MvcFramework\\SIS.MvcFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -98,6 +160,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -142,6 +210,12 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj": {
+                "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj"
+              },
+              "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj": {
+                "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj"
+              },
               "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.MvcFramework\\SIS.MvcFramework.csproj": {
                 "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.MvcFramework\\SIS.MvcFramework.csproj"
               }

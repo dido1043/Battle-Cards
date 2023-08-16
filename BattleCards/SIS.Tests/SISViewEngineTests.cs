@@ -17,6 +17,8 @@ namespace SIS.Tests
                 Name = "Dogo Argentino",
                 Price = 12345.67M
             };
+
+
             IViewEngine viewEngine = new SISViewEngine();
             var view = File.ReadAllText($"ViewTests/{fileName}.html");
             var result = viewEngine.GetHtml(view, viewModel);
