@@ -13,27 +13,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="View\Home\" />
-    <Folder Include="View\Shared\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="View\Cards\Add.html">
+    <None Update="View\Cards\Add.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="View\Cards\All.html">
+    <None Update="View\Cards\All.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="View\Home\home.html">
+    <None Update="View\Home\Home.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="View\Shared\_Layout.html">
+    <None Update="View\Shared\_Layout.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="View\Users\Login.html">
+    <None Update="View\Users\Login.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="View\Users\Register.html">
+    <None Update="View\Users\Register.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="wwwroot\css\main.css">

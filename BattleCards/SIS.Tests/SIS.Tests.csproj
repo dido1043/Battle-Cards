@@ -49,7 +49,7 @@
     <None Update="ViewTests\ViewModel.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ViewTests\ViewModel.Result..html">
+    <None Update="ViewTests\ViewModel.Result.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

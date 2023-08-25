@@ -11,10 +11,10 @@ namespace BattleCards
             List<Route> routeTable= new List<Route>();
 
            
-            routeTable.Add(new Route("/", SIS.HTTP.HttpMethod.Get, new HomeController().HomePage));
-            routeTable.Add(new Route("/users/login", SIS.HTTP.HttpMethod.Get, new UserController().Login));
-            routeTable.Add(new Route("/users/login", SIS.HTTP.HttpMethod.Post,new UserController().DoLogin));
-            routeTable.Add(new Route("/users/register", SIS.HTTP.HttpMethod.Get, new UserController().Register));
+            routeTable.Add(new Route("/", SIS.HTTP.HttpMethod.Get, new HomeController().Home));
+            routeTable.Add(new Route("/users/login", SIS.HTTP.HttpMethod.Get, new UsersController().Login));
+            routeTable.Add(new Route("/users/login", SIS.HTTP.HttpMethod.Post,new UsersController().DoLogin));
+            routeTable.Add(new Route("/users/register", SIS.HTTP.HttpMethod.Get, new UsersController().Register));
             routeTable.Add(new Route("/cards/add", SIS.HTTP.HttpMethod.Get, new CardsController().Add));
             routeTable.Add(new Route("/cards/all", SIS.HTTP.HttpMethod.Get, new CardsController().All));
 

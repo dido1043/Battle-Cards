@@ -16,14 +16,8 @@ D:\softuni\Battle-Cards\BattleCards\BattleCards\obj\Debug\net6.0\refint\Program.
 D:\softuni\Battle-Cards\BattleCards\BattleCards\obj\Debug\net6.0\Program.pdb
 D:\softuni\Battle-Cards\BattleCards\BattleCards\obj\Debug\net6.0\Program.genruntimeconfig.cache
 D:\softuni\Battle-Cards\BattleCards\BattleCards\obj\Debug\net6.0\ref\Program.dll
-D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Register.html
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\SIS.MvcFramework.dll
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\SIS.MvcFramework.pdb
-D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Login.html
-D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Home\home.html
-D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Shared\_Layout.html
-D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Cards\Add.html
-D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Cards\All.html
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\Humanizer.dll
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
@@ -123,3 +117,9 @@ D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\zh-Hant\Microso
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\wwwroot\css\main.css
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\wwwroot\favicon.ico
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Cards\Add.cshtml
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Cards\All.cshtml
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Home\Home.cshtml
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Shared\_Layout.cshtml
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Login.cshtml
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Register.cshtml

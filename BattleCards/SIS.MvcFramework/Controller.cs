@@ -1,17 +1,29 @@
 ﻿namespace SIS.MvcFramework
 {
     using SIS.HTTP;
+    using SIS.MvcFramework.ViewEngine;
+    using System.Runtime.CompilerServices;
     using System.Text;
 
     public abstract class Controller
     {
-        public HttpResponse View(string path)
+        private SISViewEngine viewEngine;
+
+        public Controller()
         {
-            var layout = System.IO.File.ReadAllText("View/Shared/_Layout.html");
+            this.viewEngine = new SISViewEngine();
+        }
+        public HttpResponse View(object viewModel = null,[CallerMemberName]string path = null)
+        {
+            var layout = System.IO.File.ReadAllText("View/Shared/_Layout.cshtml");
 
 
-            var viewContent = System.IO.File.ReadAllText(path);
-
+            //var viewContent = System.IO.File.ReadAllText(path);
+            var viewContent = System.IO.File.ReadAllText(
+                "View/" +
+                this.GetType().Name.Replace("Controller", string.Empty) +
+                "/" + path + ".cshtml");
+            viewContent = this.viewEngine.GetHtml(viewContent,viewModel);
             var responseHtml = layout.Replace("@RenderBody()", viewContent);
 
             var responseBodyBytes = Encoding.UTF8.GetBytes(responseHtml);

@@ -8,18 +8,18 @@
         public HttpResponse All(HttpRequest request)
         {
 
-            return this.View("View/Cards/All.html");
+            return this.View("Cards/All");
         }
 
         public HttpResponse Add(HttpRequest request)
         {
 
-            return this.View("View/Cards/Add.html");
+            return this.View("/Cards/Add");
         }
         public HttpResponse Collection(HttpRequest request)
         {
 
-            return this.View("");
+            return this.View("/Cards/All");
         }
     }
 }

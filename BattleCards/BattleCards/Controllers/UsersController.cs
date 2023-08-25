@@ -2,17 +2,17 @@
 {
     using SIS.HTTP;
     using SIS.MvcFramework;
-    public class UserController: Controller
+    public class UsersController: Controller
     {
         public HttpResponse Login(HttpRequest request)
         {
             
-            return this.View("View/Users/Login.html");
+            return this.View("/Users/Login");
         }
 
         public HttpResponse Register(HttpRequest request)
         {
-            return this.View("View/Users/Register.html");
+            return this.View("/Users/Register");
         }
         public HttpResponse DoLogin(HttpRequest request)
         {
