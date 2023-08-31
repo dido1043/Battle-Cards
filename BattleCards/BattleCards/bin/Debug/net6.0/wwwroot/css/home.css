@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Sedgwick+Ave+Display&display=swap');
+body{
+    text-align: center;
+    background-color: whitesmoke;
+    height: 100%;
+}
+h1{
+    font-family: 'Alkatra', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 3rem;
+}
+.footer{
+    margin-bottom: 0x;
+}

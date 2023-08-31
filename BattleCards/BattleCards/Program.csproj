@@ -31,6 +31,9 @@
     <None Update="View\Users\Register.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="wwwroot\css\home.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="wwwroot\css\main.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

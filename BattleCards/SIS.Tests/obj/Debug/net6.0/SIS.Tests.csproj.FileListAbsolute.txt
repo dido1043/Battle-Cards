@@ -220,3 +220,4 @@ D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\View\Home\Home.cs
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\View\Shared\_Layout.cshtml
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\View\Users\Login.cshtml
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\View\Users\Register.cshtml
+D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\wwwroot\css\home.css

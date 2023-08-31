@@ -7,13 +7,15 @@
         public HttpResponse Login(HttpRequest request)
         {
             
-            return this.View("/Users/Login");
+            return this.View();
         }
 
         public HttpResponse Register(HttpRequest request)
         {
-            return this.View("/Users/Register");
+            return this.View();
         }
+
+        [HttpPost]
         public HttpResponse DoLogin(HttpRequest request)
         {
             //TODO:read data

@@ -123,3 +123,4 @@ D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Home\Home.
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Shared\_Layout.cshtml
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Login.cshtml
 D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\View\Users\Register.cshtml
+D:\softuni\Battle-Cards\BattleCards\BattleCards\bin\Debug\net6.0\wwwroot\css\home.css
