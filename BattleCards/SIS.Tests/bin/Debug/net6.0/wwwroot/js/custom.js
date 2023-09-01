@@ -4,16 +4,16 @@ $(function () {
     })
 })
 
-$("#name").focusout(function () {
-    let name = $("#name").val();
+$("#name-input").focusout(function () {
+    let name = $("#name-input").val();
 
     if (name.length != 0) {
         $('#card-name').text(name);
     }
 })
 
-$("#image_url").focusout(function () {
-    let imageUrl = $("#image_url").val();
+$("#image-input").focusout(function () {
+    let imageUrl = $("#image-input").val();
 
     if (imageUrl.length != 0) {
         $('#card-image').attr('src', imageUrl);
