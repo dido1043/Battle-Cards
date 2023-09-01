@@ -68,7 +68,7 @@
             foreach (var staticFile in staticFiles)
             {
                 var url = staticFile.Replace("wwwroot", String.Empty)
-                    .Replace("\\", "/").Replace(".css", String.Empty);
+                    .Replace("\\", "/");
 
                 routeTable.Add(new Route(url, HttpMethod.Get, (request) =>
                 {

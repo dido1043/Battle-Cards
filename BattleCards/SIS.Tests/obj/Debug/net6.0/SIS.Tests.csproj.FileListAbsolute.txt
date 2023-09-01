@@ -209,7 +209,6 @@ D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\runtimes\win\lib\
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\Program.deps.json
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\Program.runtimeconfig.json
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\Program.exe
-D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\wwwroot\css\main.css
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\wwwroot\favicon.ico
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\Program.dll
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\Program.pdb
@@ -220,4 +219,8 @@ D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\View\Home\Home.cs
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\View\Shared\_Layout.cshtml
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\View\Users\Login.cshtml
 D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\View\Users\Register.cshtml
-D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\wwwroot\css\home.css
+D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\wwwroot\css\bootstrap.min.css
+D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\wwwroot\css\custom.css
+D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\wwwroot\js\bootstrap.bundle.min.js
+D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\wwwroot\js\custom.js
+D:\softuni\Battle-Cards\BattleCards\SIS.Tests\bin\Debug\net6.0\View\Cards\Collection.cshtml

@@ -1,32 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="/css/main" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <title>Battle Cards</title>
 </head>
 <body class="container">
     <header>
-        <nav>
-            <h1 >Battle Cards</h1>
-            <div  id="navbarNav">
-                <ul class="float-right">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="nav-link text-white active h5" href="/">Battle Cards</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="text-white">MENU</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="/">Home</a>
+                        <a class="nav-link text-white active h5" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/users/login">Login</a>
+                        <a class="nav-link text-white active h5" href="/users/login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/users/register">Register</a>
+                        <a class="nav-link text-white active h5" href="/users/register">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/cards/add">Add</a>
+                        <a class="nav-link text-white active h5" href="/cards/add">Add Card</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/cards/all">All</a>
+                        <a class="nav-link text-white active h5" href="/cards/collection">My Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger active h5" href="/logout">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -36,9 +45,17 @@
         @RenderBody()
     </main>
 
-    <footer class="bg-blue text-center text-lg-start footer footer-fixed-bottom">
-        <h5>    Created by Deyan</h5>
+    <footer class="bg-dark">
+        <div class="container-fluid text-center">
+            <small class="footer-background text-white">
+                CopyRight &copy; Battle Cards. All rights reserved.
+            </small>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/custom.js"></script>
 </body>
 </html>
