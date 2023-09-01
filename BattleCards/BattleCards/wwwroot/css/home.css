@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Sedgwick+Ave+Display&display=swap');
-body{
+
+body {
     text-align: center;
-    background-color: whitesmoke;
-    height: 100%;
+    background:white;
+    
 }
 h1{
     font-family: 'Alkatra', cursive;
@@ -10,5 +11,6 @@ h1{
     font-size: 3rem;
 }
 .footer{
+    display:grid;
     margin-bottom: 0x;
 }

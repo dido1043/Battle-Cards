@@ -5,18 +5,18 @@
 
     public class CardsController :Controller
     {
-        public HttpResponse All(HttpRequest request)
+        public HttpResponse All()
         {
 
             return this.View();
         }
 
-        public HttpResponse Add(HttpRequest request)
+        public HttpResponse Add()
         {
 
             return this.View();
         }
-        public HttpResponse Collection(HttpRequest request)
+        public HttpResponse Collection()
         {
 
             return this.View();

@@ -8,7 +8,7 @@
     public class HomeController : Controller
     {
         [HttpGet("/")]
-        public HttpResponse Home(HttpRequest request)
+        public HttpResponse Home()
         {
             var viewModel = new HomeViewModel();
             viewModel.CurrentYear = DateTime.UtcNow.Year;
