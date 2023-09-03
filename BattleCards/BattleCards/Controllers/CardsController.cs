@@ -1,5 +1,6 @@
 ﻿namespace Program.Controllers
 {
+    using Program.Data;
     using Program.ViewModels;
     using SIS.HTTP;
     using SIS.MvcFramework;
@@ -20,12 +21,19 @@
         [HttpPost("/cards/add")]
         public HttpResponse DoAdd()
         {
-            var viewModel = new DoAddViewModel
-            {
+            var dbContext = new ApplicationDbContext();
+
+            dbContext.Cards.Add(new Card() 
+            { 
+                Name = this.Request.FormData["name"],
+                ImageUrl = this.Request.FormData["image"],
+                Keyword = this.Request.FormData["keyword"],
                 Attack = int.Parse(this.Request.FormData["attack"]),
                 Health = int.Parse(this.Request.FormData["health"])
-            };
-            return this.View(viewModel);
+            });
+            dbContext.SaveChanges();
+
+            return this.Redirect("/");
         }
         public HttpResponse Collection()
         {
