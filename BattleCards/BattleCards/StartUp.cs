@@ -1,4 +1,6 @@
-﻿using Program.Controllers;
+﻿using Microsoft.EntityFrameworkCore;
+using Program.Controllers;
+using Program.Data;
 using SIS.HTTP;
 using SIS.MvcFramework;
 using System;
@@ -19,6 +21,7 @@ namespace BattleCards
         }
         public void Configure(List<Route> routeTable)
         {
+            new ApplicationDbContext().Database.Migrate();
         }
 
     }
