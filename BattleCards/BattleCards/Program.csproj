@@ -22,6 +22,9 @@
     <None Update="View\Cards\Collection.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="View\Cards\DoAdd.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="View\Home\Home.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
