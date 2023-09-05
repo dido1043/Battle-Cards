@@ -1,6 +1,6 @@
-﻿namespace Program.Controllers
+﻿namespace BattleCards.Controllers
 {
-    using Program.ViewModels;
+    using BattleCards.ViewModels;
     using SIS.HTTP;
     using SIS.MvcFramework;
     using System.Text;

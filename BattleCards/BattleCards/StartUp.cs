@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Program.Controllers;
-using Program.Data;
+using BattleCards.Controllers;
+using BattleCards.Data;
 using SIS.HTTP;
 using SIS.MvcFramework;
 using System;

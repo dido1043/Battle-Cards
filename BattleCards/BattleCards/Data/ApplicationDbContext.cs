@@ -1,4 +1,4 @@
-﻿namespace Program.Data
+﻿namespace BattleCards.Data
 {
     using Microsoft.EntityFrameworkCore;
     public class ApplicationDbContext : DbContext

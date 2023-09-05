@@ -1,7 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Program.Data
+﻿namespace BattleCards.Data
 {
+using System.ComponentModel.DataAnnotations;
     public class Card
     {
         [Key]

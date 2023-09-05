@@ -1,4 +1,4 @@
-﻿namespace Program.ViewModels
+﻿namespace BattleCards.ViewModels
 {
     public class HomeViewModel
     {

@@ -1,4 +1,4 @@
-﻿namespace Program.Data
+﻿namespace BattleCards.Data
 {
     public class UserCard
     {

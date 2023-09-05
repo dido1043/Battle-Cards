@@ -1,4 +1,4 @@
-﻿namespace Program.Controllers
+﻿namespace BattleCards.Controllers
 {
     using SIS.HTTP;
     using SIS.MvcFramework;

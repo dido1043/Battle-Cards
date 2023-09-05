@@ -1,4 +1,4 @@
-﻿using Program.Controllers;
+﻿using BattleCards.Controllers;
 
 namespace BattleCards
 {

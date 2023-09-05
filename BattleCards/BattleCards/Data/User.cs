@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Program.Data
+namespace BattleCards.Data
 {
     public class User
     {

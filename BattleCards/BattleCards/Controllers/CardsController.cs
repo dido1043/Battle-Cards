@@ -1,16 +1,25 @@
-﻿namespace Program.Controllers
+﻿namespace BattleCards.Controllers
 {
-    using Program.Data;
-    using Program.ViewModels;
+    using BattleCards.Data;
+    using BattleCards.ViewModels;
     using SIS.HTTP;
     using SIS.MvcFramework;
 
     public class CardsController : Controller
     {
-        public HttpResponse All()
+        public HttpResponse Collection()
         {
-
-            return this.View();
+            var db = new ApplicationDbContext();
+            var cardsViewModel = db.Cards.Select(x => new CardsViewModel
+            {
+                Name = x.Name,
+                ImageUrl = x.ImageUrl,
+                Keyword = x.Keyword,
+                Attack = x.Attack,
+                Health = x.Health
+            }).ToList();
+            return this.View(new AllCardsViewModel() { Cards = cardsViewModel});
+            
         }
 
         public HttpResponse Add()
@@ -35,10 +44,6 @@
 
             return this.Redirect("/");
         }
-        public HttpResponse Collection()
-        {
-
-            return this.View();
-        }
+       
     }
 }
