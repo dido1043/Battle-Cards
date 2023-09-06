@@ -10,6 +10,7 @@
         public HttpResponse Collection()
         {
             var db = new ApplicationDbContext();
+       
             var cardsViewModel = db.Cards.Select(x => new CardsViewModel
             {
                 Name = x.Name,
@@ -32,6 +33,11 @@
         {
             var dbContext = new ApplicationDbContext();
 
+            if (this.Request.FormData["name"].Length < 5)
+            {
+                string errorText = "Name cannot be less than 5 symbols.";
+                return this.Error(errorText);
+            }
             dbContext.Cards.Add(new Card() 
             { 
                 Name = this.Request.FormData["name"],
