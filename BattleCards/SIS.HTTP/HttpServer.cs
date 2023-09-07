@@ -75,8 +75,15 @@
                 {
                     response = new HttpResponse("text/html", new byte[0], HttpStatus.NotFound);
                 }
+                response.Headers.Add(new Header("Server","SIS Server 1.0"));
 
-                
+                var sessionCookie = request.Cookies.FirstOrDefault(x => x.Name == HttpConstants.CookieName);
+               
+                if (sessionCookie != null)
+                {
+                    response.Cookies.Add(sessionCookie);
+                }
+
                 var responseHeaderBytes = Encoding.UTF8.GetBytes(response.ToString());
                 await stream.WriteAsync(responseHeaderBytes, 0, responseHeaderBytes.Length);
                 await stream.WriteAsync(response.Body, 0, response.Body.Length);

@@ -11,7 +11,7 @@
         {
             var cookieParts = cookieAsString.Split(new char[] { '=' }, 2);
             this.Name= cookieParts[0];
-            //this.Value= cookieParts[1];
+            this.Value= cookieParts[1];
         }
 
         public string Name { get; set; }

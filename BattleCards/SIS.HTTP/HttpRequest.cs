@@ -2,8 +2,13 @@
 {
     using System.Net;
     using System.Text;
+    using System.Xml.Serialization;
+
     public class HttpRequest
     {
+        public static IDictionary<string, IDictionary<string,string>>
+            Sessions = new Dictionary<string, IDictionary<string,string>>(); 
+
         public HttpRequest(string requestString)
         {
             this.Headers = new List<Header> { };
@@ -47,7 +52,21 @@
                 {
                     this.Cookies.Add(new Cookie(cookieAsString));
                 }
+                
             }
+            var sessionCookie = this.Cookies.FirstOrDefault(x => x.Name == HttpConstants.CookieName);
+            if (sessionCookie == null || !Sessions.ContainsKey(sessionCookie.Value) || sessionCookie.Value == null)
+            {
+                var sessionId = Guid.NewGuid().ToString();
+                this.SessionData = new Dictionary<string, string>();
+                Sessions.Add(sessionId, this.SessionData);
+                this.Cookies.Add(new Cookie(HttpConstants.CookieName, sessionId));
+            }
+            else
+            {
+                this.SessionData = Sessions[sessionCookie.Value];
+            }
+
             this.Body = bodyBuilder.ToString().Replace(Environment.NewLine, "");
             var parameters = this.Body.Split('&');
             foreach (var parameter in parameters)
@@ -70,6 +89,7 @@
         public ICollection<Header> Headers { get; set; }
         public ICollection<Cookie> Cookies { get; set; }
         public IDictionary<string, string> FormData { get; set; }
+        public IDictionary<string, string> SessionData { get; set; }
         public string Body { get; set; }
 
     }
