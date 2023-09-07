@@ -81,7 +81,9 @@
                
                 if (sessionCookie != null)
                 {
-                    response.Cookies.Add(sessionCookie);
+                    var responseSessionCookie = new ResponseCookie(sessionCookie.Name, sessionCookie.Value);
+                    responseSessionCookie.Path = "/";
+                    response.Cookies.Add(responseSessionCookie);
                 }
 
                 var responseHeaderBytes = Encoding.UTF8.GetBytes(response.ToString());
