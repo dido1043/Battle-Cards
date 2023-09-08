@@ -59,7 +59,7 @@
             var viewContent = $"<div class=\"alert alert-danger\" role=\"alert\">\r\n  {errorText}\r\n</div>";
             var responseHtml = layout.Replace("@RenderBody()", viewContent);
             var responseBodyBytes = Encoding.UTF8.GetBytes(responseHtml);
-
+            
             var response = new HttpResponse("text/html", responseBodyBytes);
             return response;
         }

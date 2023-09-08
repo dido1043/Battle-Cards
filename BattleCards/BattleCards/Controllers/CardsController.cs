@@ -33,10 +33,20 @@
         {
             var dbContext = new ApplicationDbContext();
 
-            if (this.Request.FormData["name"].Length < 5)
+            if (this.Request.FormData["name"].Length < 5 || this.Request.FormData["name"].Length > 15)
             {
-                string errorText = "Name cannot be less than 5 symbols.";
-                return this.Error(errorText);
+                
+                return this.Error(HttpErrorText.InvalidTextLength);
+            }
+
+            if (int.Parse(this.Request.FormData["attack"]) < 0)
+            {
+                return this.Error(HttpErrorText.InvalidAttack);   
+            }
+
+            if (int.Parse(this.Request.FormData["health"]) < 0)
+            {
+                return this.Error(HttpErrorText.InvalidHealth);
             }
             dbContext.Cards.Add(new Card() 
             { 
