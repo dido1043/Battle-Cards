@@ -2,10 +2,10 @@
 
 namespace SIS.MvcFramework
 {
-    public class UserIdentity
+    public class UserIdentity<T>
     {
         [Key]
-        public string Id { get; set; }
+        public T Id { get; set; }
         [Required]
         [MaxLength(20)]
         public string Username { get; set; }
@@ -14,5 +14,6 @@ namespace SIS.MvcFramework
         [Required]
         [MaxLength(20)]
         public string Password { get; set; }
+        public  IdentityRole Role{ get; set; }
     }
 }
