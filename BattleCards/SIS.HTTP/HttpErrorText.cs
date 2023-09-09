@@ -11,5 +11,7 @@ namespace SIS.HTTP
         public const string InvalidTextLength = "Name cannot be less than 5 or bigger than 15 symbols.";
         public const string InvalidAttack = "Attack cannot be negative!";
         public const string InvalidHealth = "Health cannot be negative!";
+
+        public const string TryAgain = "Try again!";
     }
 }

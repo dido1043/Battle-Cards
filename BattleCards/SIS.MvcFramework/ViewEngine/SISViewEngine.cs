@@ -1,7 +1,5 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.Emit;
-using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -10,11 +8,11 @@ namespace SIS.MvcFramework.ViewEngine
 {
     public class SISViewEngine : IViewEngine
     {
-        public string GetHtml(string templateCode, object viewModel)
+        public string GetHtml(string templateCode, object viewModel, string user)
         {
             var csharpCode = GenerateCSharpFromTemplate(templateCode, viewModel);
             IView executableObject = GenerateExecutableObject(csharpCode, viewModel);
-            var html = executableObject.ExecuteTemplate(viewModel);
+            var html = executableObject.ExecuteTemplate(viewModel, user);
             return html;
         }
 
@@ -45,11 +43,12 @@ namespace SIS.MvcFramework.ViewEngine
                  {
                     public class ViewClass : IView
                     {
-                        public string ExecuteTemplate(object viewModel)
+                        public string ExecuteTemplate(object viewModel,string user)
                         {
-                           var Model = viewModel as "+typeOfModel+@";
+                           var User = user;
+                           var Model = viewModel as " + typeOfModel + @";
                            var html = new StringBuilder();"
-                            +GetMethodBody(templateCode) +
+                            + GetMethodBody(templateCode) +
                           @"return html.ToString();
                         }
                     }
@@ -60,7 +59,7 @@ namespace SIS.MvcFramework.ViewEngine
         private string GetMethodBody(string templateCode)
         {
             Regex regex = new Regex(@"[^\<\""\s&]+", RegexOptions.Compiled);
-            List<string> supportedOperators = new List<string>() 
+            List<string> supportedOperators = new List<string>()
             {"for","foreach", "while", "if", "else if", "else" };
             StringBuilder csharpCode = new StringBuilder();
             StringReader reader = new StringReader(templateCode);
@@ -68,7 +67,7 @@ namespace SIS.MvcFramework.ViewEngine
             while ((line = reader.ReadLine()) != null)
             {
                 line = line.Replace(System.Environment.NewLine, "");
-               
+
                 if (supportedOperators.Any(x => line.TrimStart().StartsWith("@" + x)))
                 {
                     var location = line.IndexOf("@");

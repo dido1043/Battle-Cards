@@ -2,6 +2,7 @@
 {
     using SIS.HTTP;
     using SIS.MvcFramework.ViewEngine;
+    using System;
     using System.Runtime.CompilerServices;
     using System.Text;
 
@@ -17,16 +18,12 @@
         public HttpRequest Request { get; set; }
         protected HttpResponse View(object viewModel = null, [CallerMemberName] string path = null)
         {
-            var layout = System.IO.File.ReadAllText("View/Shared/_Layout.cshtml");
-
-
-            //var viewContent = System.IO.File.ReadAllText(path);
             var viewContent = System.IO.File.ReadAllText(
                 "View/" +
                 this.GetType().Name.Replace("Controller", string.Empty) +
                 "/" + path + ".cshtml");
-            viewContent = this.viewEngine.GetHtml(viewContent, viewModel);
-            var responseHtml = layout.Replace("@RenderBody()", viewContent);
+            viewContent = this.viewEngine.GetHtml(viewContent, viewModel, this.GetUserId());
+            var responseHtml = PutViewInLayout(viewContent, viewModel);
 
             var responseBodyBytes = Encoding.UTF8.GetBytes(responseHtml);
 
@@ -38,6 +35,15 @@
             
 
             return response;
+        }
+
+        private string PutViewInLayout(string viewContent , object viewModel)
+        {
+            var layout = System.IO.File.ReadAllText("View/Shared/_Layout.cshtml");
+            layout = layout.Replace("@RenderBody()", "VIEW__GOES__HERE");
+            layout = this.viewEngine.GetHtml(layout, viewModel, this.GetUserId());
+            var responseHtml = layout.Replace("VIEW__GOES__HERE", viewContent);
+            return responseHtml;
         }
 
         protected HttpResponse File(string filePath, string type)
@@ -64,19 +70,19 @@
             return response;
         }
 
-        protected void SignIn(string userId)
+        public void SignIn(string userId)
         {
             this.Request.SessionData[UserIdSessionName] = userId;
         }
-        protected void SignOut(string userId) 
+        public void SignOut(string userId) 
         {
             this.Request.SessionData[UserIdSessionName] = null;
         }
-        protected bool IsUserSignedIn()
+        public bool IsUserSignedIn()
         => this.Request.SessionData.ContainsKey(UserIdSessionName) && 
             this.Request.SessionData[UserIdSessionName] != null;
 
-        protected string GetUserId()
+            public string GetUserId()
             => this.Request.SessionData.ContainsKey(UserIdSessionName) ?
             this.Request.SessionData[UserIdSessionName] : null;
     }
