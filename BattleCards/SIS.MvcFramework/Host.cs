@@ -3,7 +3,7 @@
     using SIS.HTTP;
     using System.Reflection.Metadata;
 
-    public class Host
+    public class Host 
     {
         public static async Task CreateHostAsync(IMvcApplication application, int port = 8080)
         {
@@ -37,7 +37,11 @@
                 foreach (var method in methods)
                 {
                     var url = "/" + controllerType.Name.Replace("Controller", String.Empty).ToLower()
-                        + "/" + method.Name.ToLower();  
+                        + "/" + method.Name.ToLower();
+                    if (method.Name.ToLower() == "home")
+                    {
+                        url = "/";
+                    }
                     var attribute = method.GetCustomAttributes(false)
                         .Where( x => x.GetType().IsSubclassOf(typeof(BaseHttpAttribute)))
                         .FirstOrDefault() as BaseHttpAttribute;

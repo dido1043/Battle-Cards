@@ -13,9 +13,18 @@
             var viewModel = new HomeViewModel();
             viewModel.CurrentYear = DateTime.UtcNow.Year;
             viewModel.Message = "Welcome to Battle Cards";
+            if (this.IsUserSignedIn())
+            {
+                viewModel.Message += " Hello user!";
+            }
             return this.View(viewModel);
         }
-        
+       
+        public HttpResponse About()
+        {
+            this.SignIn("dido");
+            return this.View();
+        }
  
     }
 }

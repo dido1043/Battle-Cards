@@ -7,6 +7,7 @@
 
     public abstract class Controller
     {
+        private const string UserIdSessionName = "UserId";
         private SISViewEngine viewEngine;
 
         public Controller()
@@ -14,7 +15,7 @@
             this.viewEngine = new SISViewEngine();
         }
         public HttpRequest Request { get; set; }
-        public HttpResponse View(object viewModel = null, [CallerMemberName] string path = null)
+        protected HttpResponse View(object viewModel = null, [CallerMemberName] string path = null)
         {
             var layout = System.IO.File.ReadAllText("View/Shared/_Layout.cshtml");
 
@@ -39,20 +40,19 @@
             return response;
         }
 
-        public HttpResponse File(string filePath, string type)
+        protected HttpResponse File(string filePath, string type)
         {
             var fileBytes = System.IO.File.ReadAllBytes(filePath);
             var response = new HttpResponse(type, fileBytes);
             return response;
         }
-
-        public HttpResponse Redirect(string url)
+        protected HttpResponse Redirect(string url)
         {
             var response = new HttpResponse(HttpStatus.Found);
             response.Headers.Add(new Header("Location", url));
             return response;
         }
-        public HttpResponse Error(string errorText)
+        protected HttpResponse Error(string errorText)
         {
             var layout = System.IO.File.ReadAllText("View/Shared/_Layout.cshtml");
 
@@ -60,8 +60,24 @@
             var responseHtml = layout.Replace("@RenderBody()", viewContent);
             var responseBodyBytes = Encoding.UTF8.GetBytes(responseHtml);
             
-            var response = new HttpResponse("text/html", responseBodyBytes);
+            var response = new HttpResponse("text/html", responseBodyBytes,HttpStatus.ServerError);
             return response;
         }
+
+        protected void SignIn(string userId)
+        {
+            this.Request.SessionData[UserIdSessionName] = userId;
+        }
+        protected void SignOut(string userId) 
+        {
+            this.Request.SessionData[UserIdSessionName] = null;
+        }
+        protected bool IsUserSignedIn()
+        => this.Request.SessionData.ContainsKey(UserIdSessionName) && 
+            this.Request.SessionData[UserIdSessionName] != null;
+
+        protected string GetUserId()
+            => this.Request.SessionData.ContainsKey(UserIdSessionName) ?
+            this.Request.SessionData[UserIdSessionName] : null;
     }
 }
