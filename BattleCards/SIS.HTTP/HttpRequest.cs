@@ -55,12 +55,17 @@
                 
             }
             var sessionCookie = this.Cookies.FirstOrDefault(x => x.Name == HttpConstants.CookieName);
-            if (sessionCookie == null || !Sessions.ContainsKey(sessionCookie.Value) || sessionCookie.Value == null)
+            if (sessionCookie == null)
             {
                 var sessionId = Guid.NewGuid().ToString();
                 this.SessionData = new Dictionary<string, string>();
                 Sessions.Add(sessionId, this.SessionData);
                 this.Cookies.Add(new Cookie(HttpConstants.CookieName, sessionId));
+            }
+            else if (!Sessions.ContainsKey(sessionCookie.Value))
+            {
+                this.SessionData = new Dictionary<string, string>();
+                Sessions.Add(sessionCookie.Value, this.SessionData);
             }
             else
             {
