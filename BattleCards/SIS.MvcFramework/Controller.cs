@@ -70,20 +70,22 @@
             return response;
         }
 
-        public void SignIn(string userId)
+        protected void SignIn(string userId)
         {
             this.Request.SessionData[UserIdSessionName] = userId;
         }
-        public void SignOut(string userId) 
+
+        protected void SignOut()
         {
             this.Request.SessionData[UserIdSessionName] = null;
         }
-        public bool IsUserSignedIn()
-        => this.Request.SessionData.ContainsKey(UserIdSessionName) && 
+
+        protected bool IsUserSignedIn() =>
+            this.Request.SessionData.ContainsKey(UserIdSessionName) &&
             this.Request.SessionData[UserIdSessionName] != null;
 
-            public string GetUserId()
-            => this.Request.SessionData.ContainsKey(UserIdSessionName) ?
+        protected string GetUserId() =>
+            this.Request.SessionData.ContainsKey(UserIdSessionName) ?
             this.Request.SessionData[UserIdSessionName] : null;
     }
 }

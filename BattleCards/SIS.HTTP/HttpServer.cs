@@ -85,7 +85,7 @@
                     responseSessionCookie.Path = "/";
                     response.Cookies.Add(responseSessionCookie);
                 }
-
+                //!!!!!
                 var responseHeaderBytes = Encoding.UTF8.GetBytes(response.ToString());
                 await stream.WriteAsync(responseHeaderBytes, 0, responseHeaderBytes.Length);
                 if (response.Body != null)
