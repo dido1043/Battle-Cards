@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Program.Services
+﻿namespace Program.Services
 {
-    internal interface IUserSevices
+
+    public interface IUserSevices
     {
+        void CreateUser(string username, string email, string password);
+        bool IsUserValid(string username, string password);
+
+        bool IsUsernameValid(string username);
+        bool IsEmailValid(string email);
     }
 }

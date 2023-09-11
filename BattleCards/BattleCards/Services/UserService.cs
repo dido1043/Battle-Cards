@@ -1,4 +1,5 @@
 ﻿using BattleCards.Data;
+using SIS.MvcFramework;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -13,7 +14,15 @@ namespace Program.Services
         }
         public void CreateUser(string username, string email, string password)
         {
-            throw new NotImplementedException();
+            var user = new User() 
+            {
+                Username = username,
+                Email = email,
+                Role = IdentityRole.User,
+                Password = ComputeHash(password)
+            };
+            this.db.Users.Add(user);
+            this.db.SaveChanges();  
         }
 
         public bool IsEmailValid(string email)
@@ -28,7 +37,8 @@ namespace Program.Services
 
         public bool IsUserValid(string username, string password)
         {
-            throw new NotImplementedException();
+            var user = this.db.Users.FirstOrDefault(x => x.Username == username);
+            return user.Password == ComputeHash(password);
         }
 
         
