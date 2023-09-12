@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Program.Migrations
+namespace BattleCards.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230908201345_Initial")]

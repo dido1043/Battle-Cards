@@ -13,5 +13,14 @@ namespace SIS.HTTP
         public const string InvalidHealth = "Health cannot be negative!";
 
         public const string TryAgain = "Try again!";
+
+        public const string InvalidUserError = "Invalid user";
+        public const string InvalidSamePasswords = "Passwords should be same!";
+        public const string InvalidUsername = "Username already taken!";
+        public const string InvalidTakenEmail = "Email already taken!";
+        public const string InvalidPassword = "Password cannot be null, smaller than 6 symbols or bigger than 20 symbols!";
+
+        public const string InvalidEmail = "Invalid email!";
+        public const string LogoutError = "Only logged-in users can logout!";
     }
 }

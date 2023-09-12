@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Program.Migrations
+namespace BattleCards.Migrations
 {
     public partial class Initial : Migration
     {

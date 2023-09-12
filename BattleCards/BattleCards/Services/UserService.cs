@@ -3,7 +3,7 @@ using SIS.MvcFramework;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Program.Services
+namespace BattleCards.Services
 {
     public class UserService : IUserSevices
     {
@@ -12,39 +12,40 @@ namespace Program.Services
         {
             this.db = new ApplicationDbContext();
         }
-        public void CreateUser(string username, string email, string password)
+        public string CreateUser(string username, string email, string password)
         {
             var user = new User() 
             {
                 Username = username,
                 Email = email,
-                Role = IdentityRole.User,
-                Password = ComputeHash(password)
+                Role = IdentityRole.User, 
+                Password = ComputeHash(password),
             };
             this.db.Users.Add(user);
-            this.db.SaveChanges();  
+            this.db.SaveChanges();
+            return user.Id;
         }
 
-        public bool IsEmailValid(string email)
+        public bool IsEmailAvailable(string email)
         {
             return !this.db.Users.Any(x => x.Email == email);
         }
-
-        public bool IsUsernameValid(string username)
+        //!!!
+        public bool IsUsernameAvailable(string username)
         {
             return !this.db.Users.Any(x => x.Username == username);
         }
 
-        public bool IsUserValid(string username, string password)
+        public string GetUserId(string username, string password)
         {
             var user = this.db.Users.FirstOrDefault(x => x.Username == username);
-            return user.Password == ComputeHash(password);
+            return user?.Id;
         }
 
         
-        public static string ComputeHash(string input)
+        private static string ComputeHash(string input)
         {
-            var bytes = System.Text.Encoding.UTF8.GetBytes(input);
+            var bytes = Encoding.UTF8.GetBytes(input);
             using var hash = SHA512.Create();
             
             var hashedInputBytes = hash.ComputeHash(bytes);

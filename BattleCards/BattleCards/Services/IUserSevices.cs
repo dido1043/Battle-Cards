@@ -1,12 +1,12 @@
-﻿namespace Program.Services
+﻿namespace BattleCards.Services
 {
 
     public interface IUserSevices
     {
-        void CreateUser(string username, string email, string password);
-        bool IsUserValid(string username, string password);
+        string CreateUser(string username, string email, string password);
+        string GetUserId(string username, string password);
 
-        bool IsUsernameValid(string username);
-        bool IsEmailValid(string email);
+        bool IsUsernameAvailable(string username);
+        bool IsEmailAvailable(string email);
     }
 }

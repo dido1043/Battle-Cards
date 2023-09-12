@@ -8,7 +8,7 @@ using BattleCards.Data;
 
 #nullable disable
 
-namespace Program.Migrations
+namespace BattleCards.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230903134825_InitialCreate")]
