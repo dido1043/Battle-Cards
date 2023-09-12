@@ -80,6 +80,7 @@
             return this.Redirect("/");
         }
 
+        [HttpGet("/logout")]
         public HttpResponse Logout()
         {
             if (!this.IsUserSignedIn())
