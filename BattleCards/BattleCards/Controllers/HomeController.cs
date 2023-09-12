@@ -19,17 +19,5 @@
             }
             return this.View(viewModel);
         }
-       
-        public HttpResponse About()
-        {
-            
-            this.SignIn("Dido");
-            //if (this.IsUserSignedIn())
-            //{
-            //    return this.View();
-            //}
-            return this.View();
-        }
- 
     }
 }

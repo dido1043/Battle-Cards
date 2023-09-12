@@ -7,8 +7,18 @@
 
     public class CardsController : Controller
     {
+        private ApplicationDbContext dbContext;
+
+        public CardsController()
+        {
+            this.dbContext = new ApplicationDbContext(); 
+        }
         public HttpResponse Collection()
         {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/users/login");
+            }
             var db = new ApplicationDbContext();
        
             var cardsViewModel = db.Cards.Select(x => new CardsViewModel
@@ -25,7 +35,10 @@
 
         public HttpResponse Add()
         {
-
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/users/login");
+            }
             return this.View();
         }
 
