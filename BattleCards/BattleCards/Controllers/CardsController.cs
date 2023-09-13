@@ -43,32 +43,32 @@
         }
 
         [HttpPost("/cards/add")]
-        public HttpResponse DoAdd()
+        public HttpResponse DoAdd(string name, string image, string keyword, int attack, int health)
         {
             //var dbContext = new ApplicationDbContext();
 
-            if (this.Request.FormData["name"].Length < 5 || this.Request.FormData["name"].Length > 15)
+            if (name.Length < 5 || name.Length > 15)
             {
                 
                 return this.Error(HttpErrorText.InvalidTextLength);
             }
 
-            if (int.Parse(this.Request.FormData["attack"]) < 0)
+            if (attack < 0)
             {
                 return this.Error(HttpErrorText.InvalidAttack);   
             }
 
-            if (int.Parse(this.Request.FormData["health"]) < 0)
+            if (health < 0)
             {
                 return this.Error(HttpErrorText.InvalidHealth);
             }
             this.dbContext.Cards.Add(new Card() 
             { 
-                Name = this.Request.FormData["name"],
-                ImageUrl = this.Request.FormData["image"],
-                Keyword = this.Request.FormData["keyword"],
-                Attack = int.Parse(this.Request.FormData["attack"]),
-                Health = int.Parse(this.Request.FormData["health"])
+                Name = name,
+                ImageUrl = image,
+                Keyword = keyword,
+                Attack = attack,
+                Health = health
             });
             this.dbContext.SaveChanges();
 

@@ -1,7 +1,7 @@
 ﻿namespace SIS.MvcFramework
 {
     using SIS.HTTP;
-    using System.Reflection.Metadata;
+    using System.Reflection;
 
     public class Host 
     {
@@ -58,15 +58,33 @@
                     {
                         url = attribute.Url;
                     }
-                    routeTable.Add(new Route(url, httpMethod,(request) =>
-                    {
-                        var instance = serviceCollection.CreateInstance(controllerType) as Controller;
-                        instance.Request = request;
-                        var response = method.Invoke(instance, new object [] {  }) as HttpResponse;
-                        return response;
-                    }));
+                    routeTable.Add(new Route(url, httpMethod,(request) => ExecuteAction(request,controllerType, serviceCollection,method)));
                 }
             }
+        }
+        private static HttpResponse ExecuteAction(HttpRequest request, Type controllerType, IServiceCollection serviceCollection, MethodInfo action)
+        {
+            var instance = serviceCollection.CreateInstance(controllerType) as Controller;
+            instance.Request = request;
+            var arguments = new List<object>();
+            var parameters = action.GetParameters();
+            foreach (var parameter in parameters)
+            {
+                var httpParam = GetParameterFromData(request, parameter.Name);
+                var parameterValue = Convert.ChangeType(httpParam,parameter.ParameterType);
+                arguments.Add(parameterValue);
+            }
+            var response = action.Invoke(instance, arguments.ToArray()) as HttpResponse;
+            return response;
+        }
+
+        private static string GetParameterFromData(HttpRequest request, string parameterName)
+        {
+            if (request.FormData.ContainsKey(parameterName)) 
+            { 
+                 return request.FormData[parameterName];
+            }
+            return null;
         }
 
         private static void AutoRegisterStaticFiles(List<Route> routeTable)
