@@ -8,11 +8,11 @@
 
     public class UsersController : Controller
     {
-        private UserService userService;
+        private IUserSevices userService;
 
-        public UsersController()
+        public UsersController(IUserSevices userSevices)
         {
-            this.userService = new UserService();
+            this.userService = userSevices;
         }
 
         public HttpResponse Register()

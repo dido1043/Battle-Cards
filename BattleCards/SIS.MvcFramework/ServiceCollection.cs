@@ -10,7 +10,7 @@
         public void Add<TSource, TDestination>()
             where TDestination : TSource
         {
-            dependecyContainer[typeof(TSource)] = typeof(TDestination);
+            this.dependecyContainer[typeof(TSource)] = typeof(TDestination);
         }
 
 

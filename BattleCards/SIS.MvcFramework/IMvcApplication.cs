@@ -9,7 +9,7 @@
     public interface IMvcApplication
     {
         void Configure(List<Route> routes);
-        void ConfigureServices();
+        void ConfigureServices(IServiceCollection serviceCollection);
 
     }
 }

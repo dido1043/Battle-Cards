@@ -9,9 +9,9 @@
     {
         private ApplicationDbContext dbContext;
 
-        public CardsController()
+        public CardsController(ApplicationDbContext dbContext)
         {
-            this.dbContext = new ApplicationDbContext(); 
+            this.dbContext = dbContext; 
         }
         public HttpResponse Collection()
         {
@@ -19,9 +19,9 @@
             {
                 return this.Redirect("/users/login");
             }
-            var db = new ApplicationDbContext();
+            //var db = new ApplicationDbContext();
        
-            var cardsViewModel = db.Cards.Select(x => new CardsViewModel
+            var cardsViewModel = this.dbContext.Cards.Select(x => new CardsViewModel
             {
                 Name = x.Name,
                 ImageUrl = x.ImageUrl,
@@ -45,7 +45,7 @@
         [HttpPost("/cards/add")]
         public HttpResponse DoAdd()
         {
-            var dbContext = new ApplicationDbContext();
+            //var dbContext = new ApplicationDbContext();
 
             if (this.Request.FormData["name"].Length < 5 || this.Request.FormData["name"].Length > 15)
             {
@@ -62,7 +62,7 @@
             {
                 return this.Error(HttpErrorText.InvalidHealth);
             }
-            dbContext.Cards.Add(new Card() 
+            this.dbContext.Cards.Add(new Card() 
             { 
                 Name = this.Request.FormData["name"],
                 ImageUrl = this.Request.FormData["image"],
@@ -70,7 +70,7 @@
                 Attack = int.Parse(this.Request.FormData["attack"]),
                 Health = int.Parse(this.Request.FormData["health"])
             });
-            dbContext.SaveChanges();
+            this.dbContext.SaveChanges();
 
             return this.Redirect("/");
         }
