@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using BattleCards.ViewModels;
 namespace BattleCards.Services
 {
     public interface ICardsService
     {
-        void AddCard();
+        int AddCard(string name, string image, string keyword, int attack, int health);
+
+        void AddCardToUserCollection(string userId, int cardId);
+
+        void RemoveCardFromUserCollection(string userId, int cardId);
+
+        IEnumerable<CardsViewModel> GetAllCards();
+
+        IEnumerable<CardsViewModel> GetAllCardsByUser(string id);
 
     }
 }

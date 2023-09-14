@@ -3005,7 +3005,7 @@
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "Program/1.0.0": {
+      "BattleCards/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -3015,10 +3015,10 @@
           "SIS.MvcFramework": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Program.dll": {}
+          "bin/placeholder/BattleCards.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Program.dll": {}
+          "bin/placeholder/BattleCards.dll": {}
         }
       },
       "SIS.HTTP/1.0.0": {
@@ -9526,10 +9526,10 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "Program/1.0.0": {
+    "BattleCards/1.0.0": {
       "type": "project",
-      "path": "../BattleCards/Program.csproj",
-      "msbuildProject": "../BattleCards/Program.csproj"
+      "path": "../BattleCards/BattleCards.csproj",
+      "msbuildProject": "../BattleCards/BattleCards.csproj"
     },
     "SIS.HTTP/1.0.0": {
       "type": "project",
@@ -9544,8 +9544,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BattleCards >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
-      "Program >= 1.0.0",
       "SIS.HTTP >= 1.0.0",
       "SIS.MvcFramework >= 1.0.0",
       "coverlet.collector >= 3.1.2",
@@ -9580,8 +9580,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj": {
-              "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj"
+            "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\BattleCards.csproj": {
+              "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\BattleCards.csproj"
             },
             "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj": {
               "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj"

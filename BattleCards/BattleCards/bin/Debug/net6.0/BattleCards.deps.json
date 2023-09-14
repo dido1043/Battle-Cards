@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Program/1.0.0": {
+      "BattleCards/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.15",
           "Microsoft.EntityFrameworkCore.Design": "6.0.15",
@@ -16,7 +16,7 @@
           "SIS.MvcFramework": "1.0.0"
         },
         "runtime": {
-          "Program.dll": {}
+          "BattleCards.dll": {}
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -957,7 +957,7 @@
     }
   },
   "libraries": {
-    "Program/1.0.0": {
+    "BattleCards/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

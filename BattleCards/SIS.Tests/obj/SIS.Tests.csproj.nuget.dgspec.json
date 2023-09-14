@@ -4,12 +4,12 @@
     "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.Tests\\SIS.Tests.csproj": {}
   },
   "projects": {
-    "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj": {
+    "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\BattleCards.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj",
-        "projectName": "Program",
-        "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj",
+        "projectUniqueName": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\BattleCards.csproj",
+        "projectName": "BattleCards",
+        "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\BattleCards.csproj",
         "packagesPath": "C:\\Users\\Dido\\.nuget\\packages\\",
         "outputPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\obj\\",
         "projectStyle": "PackageReference",
@@ -232,8 +232,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj": {
-                "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj"
+              "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\BattleCards.csproj": {
+                "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\BattleCards.csproj"
               },
               "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj": {
                 "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\SIS.HTTP\\SIS.HTTP.csproj"

@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "SIS.Tests/1.0.0": {
         "dependencies": {
+          "BattleCards": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.3.2",
-          "Program": "1.0.0",
           "SIS.HTTP": "1.0.0",
           "SIS.MvcFramework": "1.0.0",
           "coverlet.collector": "3.1.2",
@@ -1950,7 +1950,7 @@
         }
       },
       "xunit.runner.visualstudio/2.4.5": {},
-      "Program/1.0.0": {
+      "BattleCards/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15",
@@ -1958,7 +1958,7 @@
           "SIS.MvcFramework": "1.0.0"
         },
         "runtime": {
-          "Program.dll": {}
+          "BattleCards.dll": {}
         }
       },
       "SIS.HTTP/1.0.0": {
@@ -3005,7 +3005,7 @@
       "path": "xunit.runner.visualstudio/2.4.5",
       "hashPath": "xunit.runner.visualstudio.2.4.5.nupkg.sha512"
     },
-    "Program/1.0.0": {
+    "BattleCards/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

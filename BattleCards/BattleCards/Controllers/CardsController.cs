@@ -11,7 +11,7 @@
 
         public CardsController(ApplicationDbContext dbContext)
         {
-            this.dbContext = dbContext; 
+            this.dbContext = dbContext;
         }
         public HttpResponse Collection()
         {
@@ -20,7 +20,7 @@
                 return this.Redirect("/users/login");
             }
             //var db = new ApplicationDbContext();
-       
+
             var cardsViewModel = this.dbContext.Cards.Select(x => new CardsViewModel
             {
                 Name = x.Name,
@@ -29,8 +29,8 @@
                 Attack = x.Attack,
                 Health = x.Health
             }).ToList();
-            return this.View(new AllCardsViewModel() { Cards = cardsViewModel});
-            
+            return this.View(new AllCardsViewModel() { Cards = cardsViewModel });
+
         }
 
         public HttpResponse Add()
@@ -49,21 +49,21 @@
 
             if (name.Length < 5 || name.Length > 15)
             {
-                
+
                 return this.Error(HttpErrorText.InvalidTextLength);
             }
 
             if (attack < 0)
             {
-                return this.Error(HttpErrorText.InvalidAttack);   
+                return this.Error(HttpErrorText.InvalidAttack);
             }
 
             if (health < 0)
             {
                 return this.Error(HttpErrorText.InvalidHealth);
             }
-            this.dbContext.Cards.Add(new Card() 
-            { 
+            this.dbContext.Cards.Add(new Card()
+            {
                 Name = name,
                 ImageUrl = image,
                 Keyword = keyword,
@@ -74,6 +74,6 @@
 
             return this.Redirect("/");
         }
-       
+
     }
 }

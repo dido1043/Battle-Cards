@@ -3754,9 +3754,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj",
-      "projectName": "Program",
-      "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\Program.csproj",
+      "projectUniqueName": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\BattleCards.csproj",
+      "projectName": "BattleCards",
+      "projectPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\BattleCards.csproj",
       "packagesPath": "C:\\Users\\Dido\\.nuget\\packages\\",
       "outputPath": "D:\\softuni\\Battle-Cards\\BattleCards\\BattleCards\\obj\\",
       "projectStyle": "PackageReference",
