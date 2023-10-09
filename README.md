@@ -23,3 +23,7 @@ Technologies Used
 
 Screenshots
 
+Home Page
+
+![Home](/Screenshots/main_page.png)
+
