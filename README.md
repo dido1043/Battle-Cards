@@ -1,12 +1,14 @@
 Battle-Cards
-Battle cards is web app, designed to adding game cards with: 
+Battle Cards is a web app, designed to add game cards with: 
 - name of card
 - card image
 - health 
 - attack.
 
-Technologies Used
--.NET - Used for the backend server, routing requests and managing the database.
+Technologies Used 
+
+
+-.NET - Used for the backend server, routing requests, and managing the database.
 -HTML/CSS - For Front-end
 -Bootstrap - For Front-end
 -Entity Framework - Used to communicate with the database.
