@@ -27,3 +27,18 @@ Home Page
 
 ![Home](/Screenshots/main_page.png)
 
+Login Page
+
+![Login](/Screenshots/login.png)
+
+Register Page
+
+![Register](/Screenshots/register.png)
+
+Add Card 
+
+![Add](/Screenshots/add.png)
+
+Collection Page
+
+![collection](/Screenshots/collection.png)
