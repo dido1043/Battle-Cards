@@ -41,4 +41,4 @@ Add Card
 
 Collection Page
 
-![collection](/Screenshots/collection.png)
+![collection](/Screenshots/collection2.png)
